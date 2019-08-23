@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: eventsnow
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: eventsnow
+        track: stable
+    spec:
+      containers:
+        - name: eventsnow
+          image: "gcr.io/deloitte-eventsnowapp/syedahmed29/eventsnow:v1.0"
+          ports:
+            - name: http
+              containerPort: 3000

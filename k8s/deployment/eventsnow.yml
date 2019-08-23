@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: eventsnow
-          image: "gcr.io/deloitte-eventsnowapp/syedahmed29/eventsnow:v1.0"
+          image: "gcr.io/deloitte-eventsnowapp/syedahmed29/eventsnow:v1.BUILD_NUMBER"
           ports:
             - name: http
               containerPort: 3000
